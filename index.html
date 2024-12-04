@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Emilys+Candy&display=swap" rel="stylesheet">
+    <title>Website Project HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    
+</head>
+<body>
+    <aside id="side-menu" class="side-menu">
+        <button class="close-menu" onclick="closeNav()"><span class="material-symbols-outlined">
+            close
+            </span></button>
+    <div id="mySidenav" class="sidenav">
+       
+        <div id="menu-links">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+      </div>
+    </aside>
+    <header class="header">
+        <div onclick="myFunction()">
+            <span class="popup" id="popup">Welcome to Village Inn...</span>
+        <img src="images/my village-inn-200x200-transparent-bg.png" alt="Logo" width="50">
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="#">menu</a>
+            <a class="nav-link" href="#">locations</a>
+            <a class="nav-link" href="#">gift cards</a>
+            <a class="nav-link" href="#">rewards</a>
+            <a class="nav-link" href="#">community</a>
+            <a class="nav-link" href="#">catering</a>
+        </nav>
+        <button class="open-menu" onclick="openNav()"><span class="material-symbols-outlined">
+            menu
+            </span></button>
+       
+    </header>
+   
+<section class="hero">
+    <div class="padding">
+        <h1> Village Inn</h1>
+        <p>The Baking Only Gets Better</p>
+    </div>
+    <div>
+     <a href="#Sign Up" class="btn">Sign Up</a>
+    </div>
+</section>
+
+
+
+
+<section class="menu">
+    <div class="text-align-center">
+    <h2> Menu</h2>
+    
+        <div class="row margin-bottom-lg flex-wrap">
+           
+                    <div class="col-lg-4 col-md-12">
+                        <img src="images/breakfast.jpeg" alt="Eggs and Bacon">
+                        <p>Breakfast</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                         <img src="images/meal1.jpeg" alt="a whole four sided meal">
+                         <p>Lunch and Dinner</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="images/slice-of-pie.jpeg" alt="slice of pie">
+                        <p>Pies</p>
+                    </div>
+                    </div>
+                    </div>
+        
+    
+</section>
+
+<section class="light-blue-bg">
+<div class="text-align-center">
+    <p>Enjoy Village Inn rewards</p>
+    <p>20% Off Discount With Every Meal</p>    
+    <div>
+        <a href="https://form.jotform.com/243245327962056" class="btn">Sign Up</a>
+       </div>
+</div>
+</section>
+
+<section class="Reviews">
+    <div class="text-align-center">
+    <h2>Reviews</h2>
+</div>
+    <div class="row margin-bottom-lg flex-wrap">
+
+        <div class="col-lg-6 col-md-12">   
+             <img src="images/spotlight-villageInn_pic.jpg" width="531">
+        </div>
+        <div class="col-lg-6 col-md-12">
+             <img src="images/five-stars-quality-rating-icons-5-stars-icon-five-star-sign-rating-symbol-transparent-background-illustration-png.webp" alt="description">
+            <p>Village Inn has a rating of 3.9 out of 5 based on 331 reviews. 
+        Customers appreciate the generous portions, kid-friendly atmosphere,
+        and exceptional service.Try the pies, they come highly recommended.</p>
+        </div>
+    </div>
+</section>
+
+<footer> 
+
+             <div class="text-align-center">
+                    <p>Join a Club that is made with only the best</p>
+             </div>
+             <div class="text-align-center">
+                 <img src="images/dinning.jpg">
+            </div>
+
+            <div class="text-align-center">    
+                 <img src="images/Facebook_Logo_Secondary.png" alt="Facebook Icon" width="57">
+             
+             <img src="images/My LinkedIn.png" alt="LinkedIn Icon" width="57">
+                
+                <img src="images/Instagram_Glyph_White.png" alt="Instagram Icon" width="55">
+            </div>
+
+            <div class="height">
+            </div>
+
+</footer>
+<script>
+    function closeNav() {
+        document.getElementById("side-menu").style.width="0";
+        document.getElementById("menu-link").style.opacity="0"
+    }
+    function openNav() {
+            document.getElementById("side-menu").style.width = "250px";
+            document.getElementById("menu-links").style.opacity="1";
+}
+</script> 
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("popup");
+      popup.classList.toggle("show");
+    }
+    </script>    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

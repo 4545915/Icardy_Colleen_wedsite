@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /* font-family: EB Garamond, serif; */
+font-family: "Bodoni Moda";
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: "EB Garamond", serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-size: 40px;
+
+}
+h2 {font-size: 22px;
+
+}
+p {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 15px;
+}
+
+/* Layout  */
+.flex-container, .row {
+    display: flex;
+    flex: 1 auto;
+    max-width: 1112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.space-between {
+    justify-content: space-between;
+}
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-lg-12 {
+    flex-basis: 100%;
+    padding: 0 8px;
+}
+.col-lg-10 {
+    flex-basis: 83.334%;
+    padding: 0 8px;
+}
+.col-lg-6 {
+    flex-basis: 50%;
+    padding: 0 8px;
+}
+.col-lg-4 {
+    flex-basis: 33.3333%;
+    padding: 0 8px;
+}
+
+/* Alignment */
+.text-center { 
+    text-align: center;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+/* Components */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 7px #00000022;
+    background-color: #8ed0e6;
+    padding: 6px 20px;
+    position: relative;
+}
+.nav-link {
+    font-family: "EB Garamond", sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #090909;
+    text-transform: uppercase;
+}
+.hero-image {
+    display: flex;
+    align-items: center;
+    background-image: url('../images/"my village-inn-200x200-transparent-bg.png"');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 75px;
+    padding: 48px 32px;
+}
+.title {
+    color: rgb(11, 11, 11);
+}
+.description {
+    color: rgb(8, 8, 8);
+}
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 29px;
+    color: rgb(13, 13, 13);
+    background-color: #7abaef;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px;
+}
+.hero-text {
+    flex-basis: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.padding{
+    background-color: #b3e3f4;
+    padding: 48px 32px;
+    max-width: 357px; 
+}
+.light-blue-bg{
+    background-color: #b9ddfa;
+    padding-top: 5px;
+}
+.hero {
+    align-items: center;
+    background-image: url('../images/pies.jpeg');
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 432px;
+    padding: 48px 32px;
+}
+.menu {
+    width: 100%;
+    text-align: center;
+}
+.Reviews {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+.text-align-center{
+    width: 100%;
+    text-align: center;
+}
+.height {
+    min-height: 131px;
+    background-color: #8ed0e6;
+    padding: 6px 20px;
+}    
+.two-col-card {
+    display: flex;
+    border: 2px #268dd6 solid;
+    background-color: rgb(110, 196, 230);
+}
+.card-text {
+    padding: 12px;
+}
+
+/* spacing */
+.margin-bottom-lg {
+    margin-bottom: 48px;
+}
+.no-pad {
+    padding: 0 !important;
+}
+.px-3 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.py-5 {
+padding-top: 86px;
+padding-bottom: 86px;
+}
+.position-relative{
+    position: relative;
+}
+.popup{
+  position: absolute;
+  top: 1px;
+  left: 0;
+  padding: 2px;
+  background-color: rgb(91, 148, 241);
+  color: #fff;
+  border-radius: 2px;
+  transition: 500ms;
+  transform: translatex(50%);
+  opacity: 0;
+}
+.popup.show{
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Smaller header size on mobile */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller subheader size on mobile */
+    }
+
+    .responsive {
+        margin: 10px 0; /* Space between images on small screens */
+    }
+}
+/* IGNORE GRID SETUP */
+.bootstrap-grid {
+    display: flex;
+    padding: 0 32px;
+    justify-content: center;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.grid-wrapper {
+    width: 100%;
+    max-width: 1112px;
+}
+.grid-line {
+    margin: 0 8px;
+    flex-basis: 25%;
+    height: 100vh;
+    background-color: #78dff169;
+}
+.is-tablet, .is-desktop {
+    display: outside;
+}
+
+@media (min-width: 500px) {
+    .is-tablet {
+        display: outside;
+    }
+    .grid-line {
+        flex-basis: 16.67%;
+    }
+}
+.side-menu a:hover{
+  background-color: lightblue;
+}.close-menu {
+  position: absolute;
+  Top: 20px
+}
+.menu-links{
+  transition: 10s;
+}
+.body{
+  margin: 0px;
+
+}
+.close-menu{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: white;
+  border: 0;
+}
+.open-menu{
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: white;
+  border: 0;
+}
+.side-menu{
+  padding-top: 80px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100vh;
+  background-color: rgb(111, 205, 241);
+  overflow: hidden;
+  transition: .5s;
+  z-index: 999999;
+}
+.side-menu a {
+  display: block;
+  text-decoration: none;
+  color: rgb(253, 253, 252);
+  font-size: 24px;
+  font-family: "EB Garamond", serif;
+  padding: 16px;
+  transition: .5s;
+}
+.side-menu a:hover{
+  background-color: aqua;
+  color: rgb(254, 254, 253);
+}
+.menu-links{
+  transition: .5px;
+}
+@media (max-width: 764px) {
+    .is-desktop {
+        display: outside;
+    }
+    .grid-line {
+        flex-basis: 8.34%;
+    }
+    .two-col-card {
+        flex-wrap: wrap;
+    }
+    .col-md-12 {
+        flex-basis: 100%;
+    }
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+    .nav {
+        display: none;
+
+    }
+    .open-menu {
+        display: inline-block;
+    }
+}
+
+
+
